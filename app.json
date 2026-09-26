@@ -1,0 +1,31 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 1128630,
+    "appName": "Jadwal Salat",
+    "appType": "app",
+    "icon": "icon.png",
+    "version": {"code": 16, "name": "0.4.2"},
+    "vender": "Ibrahim",
+    "description": "Jadwal salat Indonesia dan pengingat getar"
+  },
+  "runtime": {"apiVersion": {"compatible": "3.0", "target": "4.2", "minVersion": "3.0"}},
+  "permissions": ["device:os.alarm", "device:os.notification", "device:os.local_storage"],
+  "targets": {
+    "active-max": {
+      "module": {
+        "page": {"pages": ["pages/index"]},
+        "app-side": {"path": "app-side/index"},
+        "secondary-widget": {"widgets": [{"path": "secondary-widget/index", "name": "Jadwal Salat", "icon": "icon.png", "preview": "widget-preview.png", "runtime": {"type": "js"}}]},
+        "app-service": {"services": ["app-service/reminder"]}
+      },
+      "platforms": [
+        {"name": "Amazfit Active Max", "deviceSource": 10813697},
+        {"name": "Amazfit Active Max", "deviceSource": 10813699}
+      ],
+      "designWidth": 480
+    }
+  },
+  "i18n": {"id-ID": {"appName": "Jadwal Salat"}},
+  "defaultLanguage": "id-ID"
+}
